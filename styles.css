@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  padding-top: 30px;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-wrapper {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.logo .logo-img {
+  width: 100px;
+}
+
+.navlinks ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: end;
+}
+.navlinks ul li {
+  list-style: none;
+}
+.navlinks ul li a {
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+  color: #a9a7aa;
+}
+.navlinks ul li a:hover {
+  background-color: #2c2640;
+  color: white;
+}
+#VP {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.viewplans {
+  background-color: #2c2640;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.viewplans .row1 {
+  padding-left: 135.5px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  align-content: center;
+}
+.viewplans .row1 h1 {
+  color: white;
+  font-size: 3rem;
+}
+.viewplans .row1 p {
+  color: white;
+  font-size: 1rem;
+}
+.viewplans .row1 .row2-img {
+  object-fit: cover;
+  object-position: center;
+}
+.viewplans .row1 .btn {
+  justify-self: center;
+}
+.viewplans .row1 button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  width: 150px;
+  padding: 10px;
+  border: white 1px solid;
+}
+.viewplans .row1 .btn {
+  text-align: center;
+}
+.diff {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 50px;
+}
+.diff .row1 h1 {
+  font-size: 3rem;
+  color: #2c2640;
+}
+.diff .row2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.diff .row2 .card {
+  gap: 20px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.card-img {
+  width: 100px;
+  object-position: center;
+}
+.card-title h2 {
+  font-size: 1.3rem;
+  color: #2c2640;
+}
+.card-text p {
+  color: grey;
+  font-size: 0.9rem;
+}
+.HowWeWork {
+  background-color: #2c2640;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.HowWeWork .row1 h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.HowWeWork .row2 button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  width: 150px;
+  padding: 10px;
+  border: white 1px solid;
+}
+.ffooter {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 80px;
+}
+.ffooter .row1 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.ffooter .row1 .icons {
+  text-align: right;
+}
+.ffooter .row2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.ffooter .row2 .columns ul {
+  padding-left: 0;
+}
+.ffooter .row2 .columns ul h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: grey;
+  padding-bottom: 20px;
+}
+.ffooter .row2 .columns ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.ffooter .row2 .columns ul li a {
+  text-decoration: none;
+  color: #2c2640;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.icon {
+  width: 30px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 860px) {
+  .body {
+    max-width: none;
+  }
+  body {
+    text-align: center;
+  }
+  .viewplans {
+    display: inline-block;
+    margin-bottom: 100px;
+  }
+  .viewplans .row1 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .diff .row2 {
+    display: inline-block;
+  }
+  .diff .row2 .card {
+    margin-bottom: 50px;
+  }
+  .card-img {
+    justify-self: center;
+  }
+  #HWW {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .HowWeWork {
+    display: inline-block;
+  }
+  .HowWeWork .row1 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .HowWeWork .row1 h1 {
+    font-size: 2.5rem;
+  }
+  .ffooter {
+    display: inline-block;
+  }
+  .ffooter .row1 {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  .icon {
+    width: 40px;
+  }
+  .ffooter .row1 .icons {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .ffooter .row2 {
+    display: inline-block;
+  }
+  .ffooter .row2 .columns {
+    margin-bottom: 50px;
+  }
+
+  .container-wrapper {
+    padding: 0;
+  }
+}
