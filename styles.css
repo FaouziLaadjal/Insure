@@ -301,6 +301,10 @@ nav {
   .navlinks ul li {
     padding-bottom: 50px;
   }
+  .navlinks ul li a:hover {
+    background-color: white;
+    color: #2c2640;
+  }
 
   .random {
     display: inline-flex;
