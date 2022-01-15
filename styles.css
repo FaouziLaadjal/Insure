@@ -285,6 +285,7 @@ nav {
     padding-top: 30px;
   }
   .navlinks {
+    display: none;
     inset: 0 0 0 30%;
     position: fixed;
     z-index: 1000;
@@ -302,7 +303,7 @@ nav {
   }
 
   .random {
-    display: none;
+    display: inline-flex;
   }
   header {
     background-color: white;
