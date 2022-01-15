@@ -20,7 +20,7 @@ nav {
   display: grid;
   grid-template-columns: auto auto;
 }
-.logo .logo-img {
+.logo-img {
   width: 100px;
 }
 
@@ -31,10 +31,11 @@ nav {
 }
 .navlinks ul li {
   list-style: none;
+  padding-right: 10px;
 }
 .navlinks ul li a {
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   color: #a9a7aa;
 }
@@ -81,6 +82,10 @@ nav {
   width: 150px;
   padding: 10px;
   border: white 1px solid;
+}
+.viewplans .row1 button:hover {
+  background-color: white;
+  color: #2c2640;
 }
 .viewplans .row1 .btn {
   text-align: center;
@@ -139,6 +144,11 @@ nav {
   padding: 10px;
   border: white 1px solid;
 }
+.HowWeWork .row2 button:hover {
+  color: #2c2640;
+  background-color: white;
+}
+
 .ffooter {
   padding-top: 100px;
   padding-bottom: 30px;
@@ -176,11 +186,17 @@ nav {
   font-weight: bold;
   font-size: 0.9rem;
 }
+.ffooter .row2 .columns ul li a:hover {
+  text-decoration: underline;
+}
 .icon {
   width: 30px;
   padding-right: 10px;
 }
-@media screen and (max-width: 860px) {
+.nav-btn {
+  display: none;
+}
+@media screen and (max-width: 830px) {
   .body {
     max-width: none;
   }
@@ -242,8 +258,54 @@ nav {
   .ffooter .row2 .columns {
     margin-bottom: 50px;
   }
-
+  .container {
+    padding-top: 0;
+  }
   .container-wrapper {
     padding: 0;
+  }
+  .nav-btn {
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 20px;
+    right: 30px;
+    background: url(/imgs/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    border: 0;
+  }
+  .nav-logo {
+    text-align: start;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .nav-logo .logo-img {
+    padding-top: 30px;
+  }
+  .navlinks {
+    inset: 0 0 0 30%;
+    position: fixed;
+    z-index: 1000;
+    background: hsl(0 0% 0%/0.5);
+    backdrop-filter: blur(0.5em);
+    height: 2000px;
+    padding-top: 100px;
+    padding-right: 150px;
+  }
+  .navlinks ul {
+    display: inline-block;
+  }
+  .navlinks ul li {
+    padding-bottom: 50px;
+  }
+
+  .random {
+    display: none;
+  }
+  header {
+    background-color: white;
+    position: fixed;
   }
 }
