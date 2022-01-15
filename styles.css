@@ -272,7 +272,7 @@ nav {
     aspect-ratio: 1;
     top: 20px;
     right: 30px;
-    background: url(imgs/icon-hamburger.svg);
+    background-color: red;
     background-repeat: no-repeat;
     border: 0;
   }
